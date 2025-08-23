@@ -1,0 +1,1 @@
+open("deneme1.txt", "a").write("Ruzgar, 0507 222 03 03")
