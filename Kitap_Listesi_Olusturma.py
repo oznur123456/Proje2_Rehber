@@ -9,4 +9,4 @@ def kitap_ekle():
 
     kitaplar.append({"isim": isim, "yazar": yazar, "yil": yili})
     print("\nKitap ekleme islemi tamamlandi.")
-    print(f"Kitap: {isim}, Yazar: {yazar}, Yıl: {yili}\n")
+    print(f"Kitap: {isim}, Yazar: {yazar}, Yil: {yili}\n")
