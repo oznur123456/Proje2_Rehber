@@ -1,4 +1,4 @@
-print("\nKITAP LISTESI\n")
+print("KITAP LISTESI\n")
 
 kitaplar = []
 
