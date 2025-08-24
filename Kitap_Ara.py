@@ -12,4 +12,4 @@ def aranan_kitap():
     if aranan in kitaplar:
         print(f"{aranan} kütüphanede mevcut.")
     else:
-        print("Aradiginiz kitap kutuphanede mevcut degil.)
+        print("Aradiginiz kitap kutuphanede mevcut degil.")

@@ -37,11 +37,7 @@ while True:
         print ("Lutfen eklemek istediginiz kitap bilgilerini girin.")
         import Kitap_Listesi_Olusturma 
         Kitap_Listesi_Olusturma.kitap_ekle()
-    
-    elif secim == "2": 
-        print ("Lutfen aramak istediginiz kitabin adini yazin.")
-        import Kitap_Ara
-        Kitap_Ara.
+
 
     elif secim == 4: 
         break 
