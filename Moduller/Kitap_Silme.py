@@ -26,5 +26,13 @@ def kitap_sil():
     for i, satir in enumerate(satir_list, start=1):
         print(f"{i}. {satir.strip()}")
 
+    devam = input("\nBaşka işlem yapmak ister misiniz? (e/h): ").lower()
+    if devam != "e":
+        print("Kutuphane sistemine yönlendiriliyorsunuz...")
+        import Kutuphane_Sistemi
+        Kutuphane_Sistemi.kutuphane_anamenu()
+    else:
+        kitap_sil()
+
 kitap_sil()
 

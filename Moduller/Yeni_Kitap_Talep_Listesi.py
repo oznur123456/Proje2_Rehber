@@ -8,4 +8,12 @@ def kitap_talep():
         dosya.write(f"Kitap: {isim}\t\t\t Yazar: {yazar}\t\t\t Yayin tarihi: {yili}\n")
     print("\nKitap talebiniz alinmistir.")
 
+    devam = input("\nBaşka işlem yapmak ister misiniz? (e/h): ").lower()
+    if devam != "e":
+        print("Kutuphane sistemine yönlendiriliyorsunuz...")
+        import Kutuphane_Sistemi
+        Kutuphane_Sistemi.kutuphane_anamenu()
+    else:
+        kitap_talep()
+
 kitap_talep()

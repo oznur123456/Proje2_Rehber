@@ -24,5 +24,13 @@ def odunc_al():
 
     print(f"\n'{secilen_kitap}' odunc alma listesine eklendi.")
 
+    devam = input("\nBaşka işlem yapmak ister misiniz? (e/h): ").lower()
+    if devam != "e":
+        print("Kutuphane sistemine yönlendiriliyorsunuz...")
+        import Kutuphane_Sistemi
+        Kutuphane_Sistemi.kutuphane_anamenu()
+    else:
+        odunc_al()
+
 odunc_al()
         
