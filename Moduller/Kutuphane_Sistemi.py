@@ -72,7 +72,6 @@ while True:
         Yeni_Kitap_Talep_Listesi.kitap_talep()
 
     if secim == 8: 
+        print ("Kutuphane sisteminden cikiliyor.")
         break
 
-selamla()
-kutuphane_anamenu()
