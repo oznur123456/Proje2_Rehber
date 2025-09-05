@@ -1,24 +1,28 @@
 print("KITAP KAYDI SILME\n")
 
-with open("Kitap_Listesi_Olusturma.txt", "r", encoding="utf-8") as dosya:
-    satir_list = dosya.readlines()
+def kitap_sil():
 
-print("Güncel Kitap Listesi:\n")
-for i, satir in enumerate(satir_list, start=1):
-    print(f"{i}. {satir.strip()}")
+    with open("Kitap_Listesi_Olusturma.txt", "r", encoding="utf-8") as dosya:
+        satir_list = dosya.readlines()
 
-sil_numara = int(input("\nSilmek istediginiz kitabin numarasini giriniz: "))
-
-with open("Kitap_Listesi_Olusturma.txt", "w", encoding="utf-8") as dosya:
+    print("Güncel Kitap Listesi:\n")
     for i, satir in enumerate(satir_list, start=1):
-        if i != sil_numara:
-            dosya.write(satir)
+        print(f"{i}. {satir.strip()}")
 
-print("\nKitap kaydi basariyla silindi.\n")
+    sil_numara = int(input("\nSilmek istediginiz kitabin numarasini giriniz: "))
 
-with open("Kitap_Listesi_Olusturma.txt", "r", encoding="utf-8") as dosya:
-    satir_list = dosya.readlines()
+    with open("Kitap_Listesi_Olusturma.txt", "w", encoding="utf-8") as dosya:
+        for i, satir in enumerate(satir_list, start=1):
+            if i != sil_numara:
+                dosya.write(satir)
 
-print("Güncel Kitap Listesi:\n")
-for i, satir in enumerate(satir_list, start=1):
-    print(f"{i}. {satir.strip()}")
+    print("\nKitap kaydi basariyla silindi.\n")
+
+    with open("Kitap_Listesi_Olusturma.txt", "r", encoding="utf-8") as dosya:
+        satir_list = dosya.readlines()
+
+    print("Güncel Kitap Listesi:\n")
+    for i, satir in enumerate(satir_list, start=1):
+        print(f"{i}. {satir.strip()}")
+
+kitap_sil()

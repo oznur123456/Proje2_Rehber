@@ -42,6 +42,10 @@ while True:
         import Guncel_Kitap_Listesi 
         Guncel_Kitap_Listesi.kitaplari_goster()
 
+    if secim == 3: 
+        import Kitap_Silme 
+        Kitap_Silme.kitap_sil()
+
     elif secim == 4: 
         break 
 
