@@ -17,5 +17,5 @@ def kitap_ekle():
     else:
         kitap_ekle()
 
-
+kitap_ekle()
 

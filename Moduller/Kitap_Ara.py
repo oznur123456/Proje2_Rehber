@@ -26,3 +26,4 @@ def aranan_kitap():
         import Kutuphane_Sistemi
         Kutuphane_Sistemi.kutuphane_anamenu()
 
+aranan_kitap()

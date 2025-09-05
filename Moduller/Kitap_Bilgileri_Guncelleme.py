@@ -37,4 +37,5 @@ def kitap_degistir():
     else:
         kitap_degistir()
 
+kitap_degistir()
 

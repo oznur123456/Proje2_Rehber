@@ -16,3 +16,4 @@ def kitap_talep():
     else:
         kitap_talep()
 
+kitap_talep()
