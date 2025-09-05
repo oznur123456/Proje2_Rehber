@@ -23,7 +23,7 @@ selamla()
 
 while True: 
     kutuphane_anamenu()
-    secim = (input("Seçiminiz icin bir sayi giriniz (1-6): "))
+    secim = (input("Seçiminiz icin bir sayi giriniz (1-8): "))
 
     if not secim.isdigit():
         print("Lütfen bir sayi giriniz.")
@@ -31,8 +31,8 @@ while True:
         
     secim = int(secim)
 
-    if secim < 1 or secim > 6:
-        print("Secim yanlis. 1-6 arasi bir deger giriniz.")
+    if secim < 1 or secim > 8:
+        print("Secim yanlis. 1-8 arasi bir deger giriniz.")
         continue
 
     if secim == 1: 
