@@ -34,5 +34,5 @@ def kitap_sil():
     else:
         kitap_sil()
 
-kitap_sil()
+
 
