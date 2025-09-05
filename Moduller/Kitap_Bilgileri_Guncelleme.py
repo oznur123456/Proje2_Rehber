@@ -16,7 +16,7 @@ def kitap_degistir():
     with open("Kitap_Listesi_Olusturma.txt", "w", encoding="utf-8") as dosya:
         for i, satir in enumerate(satir_list, start=1):
             if i == degistir_numara:
-                dosya.write(f"Kitap: {yeni_isim},\t\t Yazar: {yeni_yazar},\t\t Yayin tarihi: {yeni_yil}\n")
+                dosya.write(f"Kitap: {yeni_isim}\t\t\t Yazar: {yeni_yazar}\t\t\t Yayin tarihi: {yeni_yil}\n")
             else:
                 dosya.write(satir)
 
