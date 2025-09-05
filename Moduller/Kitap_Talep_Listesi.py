@@ -1,4 +1,4 @@
-print("\n KITAP TALEP LISTESI \n")
+print("\n YENI KITAP TALEBI \n")
 
 def kitap_talep():
     isim = input("Kitap adi: ")
