@@ -1,16 +1,16 @@
-print("\n GUNCEL KITAP LISTESI \n")
-
-from Kitap_Listesi_Olusturma import kitaplar
-
-kitaplar_kume = set((k["isim"], k["yazar"], k["yil"]) for k in kitaplar)
+print("\nGUNCEL KITAP LISTESI\n")
 
 def kitaplari_goster():
-    if not kitaplar_kume:
+    with open("Kitap_Listesi_Olusturma.txt", "r", encoding="utf-8") as dosya:
+        satirlar = dosya.readlines()
+
+    if not satirlar:
         print("Su anda kutuphanede kayitli kitap yok.\n")
     else:
         print("Güncel Kitap Listesi:\n")
-        for i, kitap in enumerate(kitaplar_kume, start=1):
-            print(f"{i}. {kitap[0]} | Yazar: {kitap[1]} | Yil: {kitap[2]}")
+        for i, satir in enumerate(satirlar, start=1):
+            print(f"{i}. {satir.strip()}")
         print("\n")
+
 
 kitaplari_goster()
