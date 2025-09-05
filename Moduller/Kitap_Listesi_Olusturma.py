@@ -1,4 +1,4 @@
-print("KITAP LISTESI\n")
+print("KITAP LISTESI OLUSTURMA\n")
 print("Lutfen eklemek istediginiz kitap bilgilerini giriniz.")
 
 def kitap_ekle():

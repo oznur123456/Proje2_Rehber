@@ -75,3 +75,5 @@ while True:
         print ("Kutuphane sisteminden cikiliyor.")
         break
 
+selamla()
+kutuphane_anamenu()
