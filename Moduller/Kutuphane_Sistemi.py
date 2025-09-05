@@ -59,5 +59,8 @@ while True:
     elif secim == 7:
         Yeni_Kitap_Talep_Listesi.kitap_talep()
     elif secim == 8:
-        print("Programdan cikiliyor. Hosca kalin!")
+        print("Programdan cikiliyor.")
         break
+
+selamla()
+kutuphane_anamenu()
