@@ -9,7 +9,7 @@ def kutuphane_anamenu():
     print("║  1-Kitap Ekle                  ║")
     print("║  2-Kitap Ara                   ║")
     print("║  3-Kitap Silme                 ║")
-    print("║  4-Kitap Bilgileri Degistirme  ║")
+    print("║  4-Kitap Bilgileri Guncelleme  ║")
     print("║  5-Odunc Alma Islemi           ║")
     print("║  6-Guncel Kitap Listesi        ║")
     print("║  7-Yeni Kitap Talebi           ║")
@@ -40,8 +40,8 @@ while True:
         Kitap_Listesi_Olusturma.kitap_ekle()
 
     if secim == 2: 
-        import Guncel_Kitap_Listesi 
-        Guncel_Kitap_Listesi.kitaplari_goster()
+        import Kitap_Ara 
+        Kitap_Ara.aranan_kitap()
 
     if secim == 3: 
         import Kitap_Silme 
@@ -62,6 +62,9 @@ while True:
     if secim == 7: 
         import Yeni_Kitap_Talep_Listesi
         Yeni_Kitap_Talep_Listesi.kitap_talep()
+
+    if secim == 8: 
+        break
 
 selamla()
 kutuphane_anamenu()
