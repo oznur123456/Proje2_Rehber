@@ -1,4 +1,3 @@
-Kitap: Deliligin Tarihi		 Yazar: Michel Faucault		 Yayin tarihi: 1961		
+Kitap: Deliligin Tarihi			 Yazar: Michel Faucault			 Yayin tarihi: 1961
 Kitap: Donusum			 Yazar: Franz Kafka			 Yayin tarihi: 1915
 Kitap: Yaban			 Yazar: Yakup Kadri Karaosmanoglu			 Yayin tarihi: 1932
-Kitap: 			 Yazar: 			 Yayin tarihi: 

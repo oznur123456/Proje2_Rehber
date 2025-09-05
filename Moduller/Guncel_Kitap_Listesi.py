@@ -12,5 +12,14 @@ def kitaplari_goster():
             print(f"{i}. {satir.strip()}")
         print("\n")
 
+    devam = int(input("\nKutuphane sistemine donmek icin 1'e basiniz. ").lower())
+    if devam == 1:
+        print("Kutuphane sistemine yonlendiriliyorsunuz...")
+        import Kutuphane_Sistemi
+        Kutuphane_Sistemi.kutuphane_anamenu()
+    else:
+        print ("Lutfen 1'e basiniz.")
+        kitaplari_goster()
+
 kitaplari_goster()
 
