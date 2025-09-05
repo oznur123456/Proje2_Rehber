@@ -35,7 +35,6 @@ while True:
         continue
 
     if secim == 1: 
-        print ("Lutfen eklemek istediginiz kitap bilgilerini girin.")
         import Kitap_Listesi_Olusturma 
         Kitap_Listesi_Olusturma.kitap_ekle()
 
