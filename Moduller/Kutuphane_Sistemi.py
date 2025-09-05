@@ -52,16 +52,16 @@ while True:
         Kitap_Bilgileri_Guncelleme.kitap_degistir()
 
     if secim == 5: 
-        import Kitap_Silme 
-        Kitap_Silme.kitap_sil()
+        import Kitap_Odunc_Alma
+        Kitap_Odunc_Alma.odunc_al()
 
     if secim == 6: 
-        import Kitap_Silme 
-        Kitap_Silme.kitap_sil()
+        import Guncel_Kitap_Listesi 
+        Guncel_Kitap_Listesi.kitaplari_goster()
 
     if secim == 7: 
-        import Kitap_Silme 
-        Kitap_Silme.kitap_sil()
+        import Yeni_Kitap_Talep_Listesi
+        Yeni_Kitap_Talep_Listesi.kitap_talep()
 
 selamla()
 kutuphane_anamenu()

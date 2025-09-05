@@ -9,8 +9,6 @@ def kitap_degistir():
         print(f"{i}. {satir.strip()}")
 
     degistir_numara = int(input("\nBilgilerini degistirmek istediginiz kitabin numarasini giriniz: "))
-
-    # Kullanıcıdan yeni bilgiler
     yeni_isim = input("Yeni kitap adi: ")
     yeni_yazar = input("Yeni yazar adi: ")
     yeni_yil = input("Yeni yayin tarihi: ")
