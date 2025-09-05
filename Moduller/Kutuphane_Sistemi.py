@@ -38,6 +38,9 @@ while True:
         import Kitap_Listesi_Olusturma 
         Kitap_Listesi_Olusturma.kitap_ekle()
 
+    if secim == 2: 
+        import Guncel_Kitap_Listesi 
+        Guncel_Kitap_Listesi.kitaplari_goster()
 
     elif secim == 4: 
         break 

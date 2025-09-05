@@ -12,5 +12,4 @@ def kitaplari_goster():
             print(f"{i}. {satir.strip()}")
         print("\n")
 
-
 kitaplari_goster()
