@@ -1,3 +1,4 @@
+
 import Kitap_Listesi_Olusturma
 import Kitap_Ara
 import Kitap_Silme
@@ -7,8 +8,8 @@ import Guncel_Kitap_Listesi
 import Yeni_Kitap_Talep_Listesi
 
 def selamla():
-    print("Merhaba! Kutuphane sistemine hos geldiniz.")
-    
+    print("Merhaba! Kutuphane sistemine hos geldiniz.\n")
+
 def kutuphane_anamenu():
     print("\033[1;35;40m")
     print("╔════════════════════════════════╗")
@@ -23,57 +24,40 @@ def kutuphane_anamenu():
     print("║  7-Yeni Kitap Talebi           ║")
     print("║  8-Cikis                       ║")
     print("║                                ║")
-    print("║   Seçiminiz nedir?             ║")
+    print("║   Seciminiz nedir?             ║")
     print("╚════════════════════════════════╝")
     print("\033[0m") 
-    
+
 selamla()
 
 while True: 
     kutuphane_anamenu()
-    secim = (input("Seçiminiz icin bir sayi giriniz (1-6): "))
+    secim = input("Seciminiz icin bir sayi giriniz (1-8): ").strip()
 
     if not secim.isdigit():
-        print("Lütfen bir sayi giriniz.")
+        print("Lutfen bir sayi giriniz.\n")
         continue
         
     secim = int(secim)
 
-    if secim < 1 or secim > 6:
-        print("Secim yanlis. 1-6 arasi bir deger giriniz.")
+    if secim < 1 or secim > 8:
+        print("Secim yanlis. 1-8 arasi bir deger giriniz.\n")
         continue
 
-    if secim == 1: 
-        import Kitap_Listesi_Olusturma 
+    if secim == 1:
         Kitap_Listesi_Olusturma.kitap_ekle()
-
-    if secim == 2: 
-        import Kitap_Ara 
+    elif secim == 2:
         Kitap_Ara.aranan_kitap()
-
-    if secim == 3: 
-        import Kitap_Silme 
+    elif secim == 3:
         Kitap_Silme.kitap_sil()
-
-    if secim == 4: 
-        import Kitap_Bilgileri_Guncelleme 
+    elif secim == 4:
         Kitap_Bilgileri_Guncelleme.kitap_degistir()
-
-    if secim == 5: 
-        import Kitap_Odunc_Alma
+    elif secim == 5:
         Kitap_Odunc_Alma.odunc_al()
-
-    if secim == 6: 
-        import Guncel_Kitap_Listesi 
+    elif secim == 6:
         Guncel_Kitap_Listesi.kitaplari_goster()
-
-    if secim == 7: 
-        import Yeni_Kitap_Talep_Listesi
+    elif secim == 7:
         Yeni_Kitap_Talep_Listesi.kitap_talep()
-
-    if secim == 8: 
-        print ("Kutuphane sisteminden cikiliyor.")
+    elif secim == 8:
+        print("Programdan cikiliyor. Hosca kalin!")
         break
-
-selamla()
-kutuphane_anamenu()
