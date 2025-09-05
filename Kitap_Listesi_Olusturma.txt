@@ -1,2 +1,2 @@
 Kitap: Deliligin Tarihi		 Yazar: Michel Faucault		 Yayin tarihi: 1961		
-Kitap: Donusum			 Yazar: Franz Kafka			 Yayin tarihi: 1915
+Kitap: Donusum,		 Yazar: Franz Kafka,		 Yayin tarihi: 1915
